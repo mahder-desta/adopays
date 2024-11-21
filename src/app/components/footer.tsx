@@ -21,8 +21,8 @@ export default function Footer() {
             <Link href="#" className="logo-footer">
               <Image
                 src="/images/logo-light.png"
-                width={121}
-                height={27}
+                width={73}
+                height={21}
                 className="md:ms-0 mx-auto"
                 alt=""
               />
