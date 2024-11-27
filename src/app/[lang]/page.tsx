@@ -15,8 +15,14 @@ import Screenshot from "../components/screenshot";
 import FeaturesOne from "../components/features-one";
 import ScrollToTop from "../components/scroll-to-top";
 import FeaturesTwo from "../components/features-two";
+import { getDictionary } from "./dictionaries";
 
-export default function Page() {
+export default async function Page({
+  params: { lang },
+}: {
+  params: { lang: "en" | "ti" };
+}) {
+  const dict = await getDictionary("en");
   return (
     <>
       <Navbar
@@ -98,7 +104,7 @@ export default function Page() {
       </section>
 
       <section className="relative overflow-hidden md:py-24 py-16" id="faqs">
-        <Faq />
+        <Faq dict={dict} />
       </section>
 
       <section

@@ -114,34 +114,20 @@ export const screenshotImg = [
 
 export const faq = [
   {
-    id: 1,
-    title: "What is AdoPay?",
-    desc: "AdoPay is a mobile banking application from Dedebit Microfinance Institution that specializes in loan services. It allows customers to manage loans, check balances, transfer funds, and pay bills directly from their mobile devices.",
+    question: "faq.general_questions.what_is_adopay",
+    answer: "faq.general_questions.adopay_description",
   },
   {
-    id: 2,
-    title: "How do I apply for a loan on AdoPay?",
-    desc: "To apply for a loan on AdoPay, simply download the app, register an account, complete your profile, and select your desired loan type. Submit the required documents through the app, and you'll receive a decision typically within 24 hours.",
+    question: "faq.general_questions.services_offered",
+    answer: "faq.general_questions.services_description",
   },
   {
-    id: 3,
-    title: "What types of loans are available on AdoPay?",
-    desc: "AdoPay offers various loan types including Personal Loans, Business Loans, Salary Advance, and Emergency Loans. Each loan type has specific requirements and terms designed to meet different financial needs.",
+    question: "faq.general_questions.how_to_register",
+    answer: "faq.general_questions.registration_instructions",
   },
   {
-    id: 4,
-    title: "Is group lending available on AdoPay?",
-    desc: "Yes, AdoPay supports both individual and group lending options. Groups can collectively apply for loans, which often come with special terms and conditions designed specifically for group borrowing.",
-  },
-  {
-    id: 5,
-    title: "How secure is AdoPay?",
-    desc: "AdoPay implements industry-standard security measures including encryption, secure authentication, and regular security updates to protect your financial information and transactions.",
-  },
-  {
-    id: 6,
-    title: "What other services does AdoPay offer besides loans?",
-    desc: "In addition to loans, AdoPay offers various banking services including balance inquiries, fund transfers, bill payments, airtime purchases, and account management features.",
+    question: "faq.general_questions.forgot_pin",
+    answer: "faq.general_questions.forgot_pin_instructions",
   },
 ];
 

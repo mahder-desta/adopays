@@ -11,6 +11,9 @@ import { FiChevronUp, FiDownload } from "react-icons/fi";
 
 import { faq } from "../data/data";
 import Image from "next/image";
+import { translate } from "@/lib/utils";
+import { Dictionary } from "../[lang]/dictionaries";
+import { Question } from "../data/faq";
 
 interface FaqData {
   id: number;
@@ -18,7 +21,7 @@ interface FaqData {
   desc: string;
 }
 
-export default function Faq() {
+export default function Faq({ dict }: { dict: Dictionary }) {
   let [isOpen, setOpen] = useState<boolean>(false);
   let [activeTab, setActiveTab] = useState<number>(1);
 
@@ -66,38 +69,43 @@ export default function Faq() {
             out some of our FAQs below.
           </p>
 
-          <div id="accordion-collapseone" className="mt-8">
-            {faq.map((item: FaqData, index: number) => {
+          <div id="accordion-collapseone" className="">
+            {faq.map((item: Question, index: number) => {
               return (
                 <div
                   className={`relative shadow dark:shadow-gray-800 rounded-md overflow-hidden ${
-                    item.id !== 1 ? "mt-3" : ""
+                    index !== 0 ? "mt-3" : ""
                   }`}
                   key={index}
                 >
                   <h2 className="font-semibold">
                     <button
                       type="button"
-                      onClick={() => setActiveTab(item.id)}
+                      onClick={() => setActiveTab(index)}
                       className={`flex justify-between items-center p-5 w-full font-medium text-start ${
-                        activeTab === item.id
+                        activeTab === index
                           ? "bg-slate-50/50 dark:bg-slate-800/20 text-primary"
                           : ""
                       }`}
                     >
-                      <span>{item.title}</span>
+                      <span>{translate(item.question, dict)}</span>
                       <FiChevronUp
                         className={`size-4 shrink-0 ${
-                          activeTab === item.id ? "" : "rotate-180"
+                          activeTab === index ? "" : "rotate-180"
                         }`}
                       />
                     </button>
                   </h2>
-                  <div className={`${activeTab === item.id ? "" : "hidden"}`}>
-                    <div className="p-5">
-                      <p className="text-slate-400 dark:text-gray-400">
-                        {item.desc}
-                      </p>
+                  <div className={`${activeTab === index ? "" : "hidden"}`}>
+                    <div className="p-5 text-slate-500 dark:text-slate-300">
+                      <p className="">{translate(item.answer, dict)}</p>
+                      {item.additional && (
+                        <ul className="list-disc list-inside mt-4 ml-4">
+                          {item.additional.map((additional, index) => (
+                            <li key={index}>{translate(additional, dict)}</li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </div>
