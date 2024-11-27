@@ -1,0 +1,94 @@
+{
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "general_questions": {
+      "title": "General Questions",
+      "what_is_adopay": "What is AdoPay?",
+      "adopay_description": "AdoPay is a mobile banking application offered by Dedebit Microfinance Institution, with a primary focus on loan services. It enables customers to apply for and manage loans, whether as individuals or in groups, directly from their mobile devices. In addition to its loan services, AdoPay provides a range of other banking features such as checking account balances, transferring funds, and paying bills. The app is designed to offer a convenient and secure platform for customers to access financial services, making it easier to handle their banking needs anytime, anywhere.",
+      "services_offered": "What services does AdoPay offer?",
+      "services_description": "AdoPay offers a range of services including:\n▪ Loan Services: Various loan options to meet different financial needs.\n▪ Transfers: Between your own accounts, to other accounts, and to mobile wallets.\n▪ Airtime Purchase: For yourself or others.\n▪ Utility Payments: Payments for electricity, government services, airline tickets, and more.",
+      "how_to_register": "How do I register for AdoPay services?",
+      "registration_instructions": "To register, download the AdoPay app, follow the registration instructions, and ensure your phone number and ID are verified.",
+      "forgot_pin": "What should I do if I forget my PIN?",
+      "forgot_pin_instructions": "Use the \"Forgot PIN\" feature in the app or contact customer support for assistance."
+    },
+    "loan_services": {
+      "title": "Loan Services",
+      "apply_for_loan": "How do I apply for a loan?",
+      "apply_instructions": "Open the AdoPay app, navigate to Loan Services, select your preferred loan type, and fill out the application form.",
+      "loan_types": "What types of loans are available on AdoPay?",
+      "loan_types_list": {
+        "intro": "AdoPay offers a variety of loans to cater to different financial needs:",
+        "agricultural_input": "Agricultural Input Loan: Provides funds for farmers to purchase seeds, fertilizers, and other essential agricultural inputs.",
+        "home_equipment": "Home Equipment Financing: Offers financing for purchasing home appliances and equipment.",
+        "emergency_loan": "Emergency Loan (Medical): Quick access to funds for unforeseen medical expenses.",
+        "kisanet_loan": "Kisanet Loan: A special loan designed for specific community needs (please check the app for detailed eligibility criteria).",
+        "ado_loan": "Ado Loan: A general-purpose loan for various personal or business needs.",
+        "salary_advance": "Employee Salary Advance Loan: Allows employees to access a portion of their upcoming salary in advance.",
+        "asbeza_loan": "Asbeza Loan: Tailored for purchasing groceries and household necessities.",
+        "holiday_loan": "Holiday Loan: Provides extra funds to cover expenses during holidays and festive seasons.",
+        "education_loan": "Education Loan: Helps cover educational expenses such as tuition fees, books, and school supplies."
+      },
+      "repayment": "How do I repay my loan?",
+      "repayment_instructions": "Loan repayments can be made through the Loan Services section in the app. You will also receive reminders for upcoming due dates.",
+      "interest_rates": "What are the interest rates and repayment terms?",
+      "interest_rates_info": "Interest rates and repayment periods vary based on the loan type. Detailed information will be provided before you confirm your loan application.",
+      "early_repayment": "Can I repay my loan early?",
+      "early_repayment_description": "Yes, early repayment is allowed without penalties.",
+      "eligibility": "Are there specific eligibility criteria for each loan type?",
+      "eligibility_info": "Yes, each loan type may have specific eligibility requirements. Please refer to the loan details within the app or contact customer support for more information."
+    },
+    "transfers": {
+      "title": "Transfers",
+      "available_types": "What types of transfers are available?",
+      "types_list": {
+        "intro": "AdoPay allows: ",
+        "own_accounts": "Transfers between your own accounts.",
+        "other_users": "Transfers to other AdoPay users.",
+        "mobile_wallet": "Mobile wallet transfers."
+      },
+      "fees": "Are there any transfer fees?",
+      "fees_info": "Some transfers may incur fees. Any applicable fees will be shown before confirming the transaction.",
+      "processing_time": "How long does a transfer take to process?",
+      "processing_info": "Transfers are typically instant. However, occasional delays may occur due to network issues.",
+      "cancellation": "Can I cancel a transfer after submission?",
+      "cancellation_info": "Transfers cannot be canceled once processed, so please verify all details before confirming."
+    },
+    "airtime_purchase": {
+      "title": "Airtime Purchase",
+      "how_to_purchase": "How do I purchase airtime using AdoPay?",
+      "purchase_instructions": "Open the app, go to Airtime Purchase, select the amount, and enter the phone number to recharge.",
+      "buy_for_others": "Can I buy airtime for someone else?",
+      "others_instructions": "Yes, you can enter the recipient's phone number in the airtime purchase form.",
+      "payment_methods": "What payment methods can I use for airtime purchases?",
+      "payment_options": "You can pay using your AdoPay wallet, linked bank account, or other stored payment methods.",
+      "failed_purchase": "What if my airtime purchase fails?",
+      "failed_instructions": "If the transaction fails, the amount will be automatically refunded to your account."
+    },
+    "utility_payments": {
+      "title": "Utility Payments",
+      "available_payments": "What utility bills can I pay with AdoPay?",
+      "payment_types": "AdoPay allows payments for services such as electricity, water, government fees, passport services, and airline tickets.",
+      "how_to_pay": "How do I make a utility payment?",
+      "payment_instructions": "Go to Utility Payments in the app, choose your service provider, enter the required details, and confirm your payment.",
+      "scheduling": "Can I schedule utility payments?",
+      "scheduling_info": "Currently, AdoPay does not support scheduled payments. However, you can set reminders through the app.",
+      "payment_issues": "What if my utility payment doesn't go through?",
+      "issues_help": "Contact customer support if there are any issues with your utility payment."
+    },
+    "security_troubleshooting": {
+      "title": "Security & Troubleshooting",
+      "is_secure": "Is AdoPay secure?",
+      "security_info": "Yes, AdoPay uses advanced encryption and authentication protocols to safeguard your transactions and personal data.",
+      "unauthorized": "What should I do if I notice unauthorized transactions?",
+      "unauthorized_steps": "Immediately block your account through the app or contact customer support to report the issue.",
+      "contact_support": "How do I contact AdoPay customer support?",
+      "support_channels": {
+        "intro": "You can reach customer support through:",
+        "chat": "In-app Chat: Access the chat feature within the app for real-time assistance.",
+        "email": "Email: Send us an email at support@adopay.com.",
+        "phone": "Customer Service Hotline: Call us at 123-456-7890."
+      }
+    }
+  }
+}

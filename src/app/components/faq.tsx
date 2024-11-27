@@ -107,7 +107,7 @@ export default function Faq() {
 
           <div className="mt-6">
             <Link
-              href="#"
+              href="/faq"
               className="hover:text-primary dark:hover:text-primary after:bg-primary dark:text-white transition duration-500 font-medium"
             >
               Find Out More <i className="mdi mdi-arrow-right"></i>
