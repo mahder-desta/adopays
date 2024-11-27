@@ -33,14 +33,14 @@ export default function FeaturesOne() {
         <div className="w-full">
           {/* Buttons */}
           <div className="flex justify-center w-full">
-            <TabList className=" inline-flex flex-wrap justify-center rounded-xl bg-primary/5 p-1 mb-2 gap-3 ">
+            <TabList className=" inline-flex flex-wrap justify-center rounded-xl bg-primary/5 p-1 mb-2 gap-4 ">
               {feature.map((tab, index) => {
                 let Icon = tab.icon;
 
                 return (
                   <Tab key={index} as={Fragment}>
                     <button
-                      className={`h-10 flex-1 flex items-center justify-start md:justify-center rounded-lg  whitespace-nowrap  px-4 text-base font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-primary ${
+                      className={`h-10  flex items-center justify-start md:justify-center rounded-lg  whitespace-nowrap  px-4 text-base font-medium transition-colors duration-150 ease-in-out focus-visible:outline-none ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-primary ${
                         selectedTab === index
                           ? "bg-primary/20 text-primary-900"
                           : "text-slate-600 hover:text-slate-primary"
@@ -58,36 +58,56 @@ export default function FeaturesOne() {
 
           {/* Tab panels */}
           <TabPanels className="">
-            <div className="relative flex flex-col">
+            <div className="relative ">
               {feature.map((tab, index) => {
                 return (
                   <TabPanel key={index} as={Fragment} static={true}>
                     <Transition show={selectedTab === index}>
-                      <article className="w-full items-stretch rounded-2xl  shadow-xl focus-visible:outline-none focus-visible:ring focus-visible:ring-primary flex transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] data-[closed]:opacity-0 data-[enter]:duration-700 data-[enter]:data-[closed]:-translate-y-8 data-[closed]:absolute data-[leave]:duration-300 data-[leave]:data-[closed]:translate-y-12">
+                      <div className="w-full  rounded-2xl  shadow-xl focus-visible:outline-none focus-visible:ring focus-visible:ring-primary flex transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] data-[closed]:opacity-0 data-[enter]:duration-700 data-[enter]:data-[closed]:-translate-y-8 data-[closed]:absolute data-[leave]:duration-300 data-[leave]:data-[closed]:translate-y-12">
                         <div
-                          className={`p-6  transition duration-500 rounded-3xl`}
+                          className={`p-6  w-full transition duration-500 rounded-3xl`}
                           key={index}
                         >
                           <div className="content mt-7">
                             <p className="text-lg  font-semibold">
                               {tab.title}
                             </p>
-                            <p className="text-slate-400 mt-3">{tab.desc}</p>
+                            <p className=" mt-3">{tab.desc}</p>
+                            <div className="flex flex-col md:flex-row gap-2 mt-4 w-full">
+                              <div className="basis-1/2">
+                                <h6 className="font-semibold    mb-1 mt-4">
+                                  Product Details
+                                </h6>
+                                <ul className="list-none  mt-4">
+                                  {tab.details.map((detail, idx) => (
+                                    <li key={idx} className="mb-1 flex">
+                                      <i className="mdi mdi-check text-primary text-xl me-2"></i>
+                                      {detail.label}
+                                      <span className="font-semibold ml-3">
+                                        {detail.value}
+                                      </span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
 
-                            <h6 className="font-semibold  text-sm   mb-1 mt-4">
-                              Requirements
-                            </h6>
-                            <ul className="list-none text-slate-400 mt-4">
-                              {tab.requirements.map((requirement, idx) => (
-                                <li key={idx} className="mb-1 flex">
-                                  <i className="mdi mdi-check text-primary text-xl me-2"></i>
-                                  {requirement}
-                                </li>
-                              ))}
-                            </ul>
+                              <div className="basis-1/2">
+                                <h6 className="font-semibold   mb-1 mt-4">
+                                  Requirements
+                                </h6>
+                                <ul className="list-none  mt-4">
+                                  {tab.requirements.map((requirement, idx) => (
+                                    <li key={idx} className="mb-1 flex">
+                                      <i className="mdi mdi-check text-primary text-xl me-2"></i>
+                                      {requirement}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </article>
+                      </div>
                     </Transition>
                   </TabPanel>
                 );

@@ -9,7 +9,7 @@ export default function Download() {
     <div className="container relative">
       <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
         <div className="lg:col-span-5 md:col-span-6">
-          <div className="pt-6 px-6 rounded-2xl bg-primary/5 dark:bg-primary/10 shadow shadow-primary/20">
+          <div className="pt-12 px-12 rounded-2xl bg-primary/5 dark:bg-primary/10 shadow shadow-primary/20">
             <Image
               src="/images/phone/half-3.png"
               width={0}

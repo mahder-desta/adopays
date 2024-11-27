@@ -14,54 +14,222 @@ import {
   FiCalendar,
 } from "react-icons/fi";
 
+import { GiCircleForest, GiMoneyStack } from "react-icons/gi";
+import { RiArmchairFill } from "react-icons/ri";
+import { FaHandHoldingMedical } from "react-icons/fa";
+import { FaBusinessTime } from "react-icons/fa6";
+
 export const feature = [
   {
+    icon: GiCircleForest,
+    title: "Agricultural Input Loan",
+    desc: "Provides funds for farmers to purchase seeds, fertilizers, and other essential agricultural inputs.",
+    requirements: [
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
+    ],
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 30,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "90 days",
+      },
+      {
+        label: "Access Fee",
+        value: "2%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
+    ],
+    active: true,
+  },
+  {
+    icon: RiArmchairFill,
+    title: "Home Equipment Financing",
+    desc: "Offers financing for purchasing home appliances and equipment.",
+    requirements: [
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
+    ],
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 50,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "90 days",
+      },
+      {
+        label: "Access Fee",
+        value: "3%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
+    ],
+    active: false,
+  },
+
+  {
+    icon: FaHandHoldingMedical,
+    title: "Emergency Loan (Medical)",
+    desc: "Quick access to funds for unforeseen medical expenses.",
+    requirements: [
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
+    ],
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 10,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "30 days",
+      },
+      {
+        label: "Access Fee",
+        value: "3%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
+    ],
+    active: true,
+  },
+  {
     icon: FiHeart,
-    title: "Personal Loan",
-    desc: "Quick access to funds for personal needs with flexible repayment terms up to 12 months",
+    title: "Kisanet Loan",
+    desc: "A special loan designed for specific community needs (please check the app for detailed eligibility criteria).",
     requirements: [
-      "Valid government ID",
-      "3 months bank statement",
-      "Proof of income",
-      "Minimum monthly income of ₦100,000",
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
+    ],
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 10,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "7 days",
+      },
+      {
+        label: "Access Fee",
+        value: "3%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
     ],
     active: true,
   },
   {
-    icon: FiActivity,
-    title: "Business Loan",
-    desc: "Grow your business with our affordable loans designed for small and medium enterprises",
+    icon: FaBusinessTime,
+    title: "Ado Loan",
+    desc: "A general-purpose loan for various personal or business needs.",
     requirements: [
-      "Business registration documents",
-      "6 months bank statement",
-      "Tax clearance certificate",
-      "2 years business operation proof",
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
     ],
-    active: false,
-  },
-  {
-    icon: FiWatch,
-    title: "Salary Advance",
-    desc: "Get instant access to a portion of your salary before payday with minimal documentation",
-    requirements: [
-      "Employment letter",
-      "Last 3 months pay slip",
-      "Corporate account statement",
-      "Salary account with partner bank",
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 20,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "60 days",
+      },
+      {
+        label: "Access Fee",
+        value: "3%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
     ],
     active: true,
   },
   {
-    icon: FiFeather,
-    title: "Emergency Loan",
-    desc: "Quick funds for unexpected expenses with same-day approval and minimal requirements",
+    icon: GiMoneyStack,
+    title: "Employee Salary Advance Loan",
+    desc: "Allows employees to access a portion of their upcoming salary in advance.",
     requirements: [
-      "Valid government ID",
-      "Recent utility bill",
-      "Active bank account",
-      "Proof of income/employment",
+      "DECSI account",
+      "Renewed kebele ID",
+      "Engaged in income-generating activities",
+      "Own sim card and mobile phone",
+      "Age above 18",
     ],
-    active: false,
+    details: [
+      {
+        label: "Credit limit",
+        value: "Up to 5,000 ETB",
+      },
+      {
+        label: "Credit Period",
+        value: "30 days",
+      },
+      {
+        label: "Access Fee",
+        value: "3%",
+      },
+      {
+        label: "Daily Interest",
+        value: "0.5%",
+      },
+      {
+        label: "Penalty",
+        value: "1%",
+      },
+    ],
+    active: true,
   },
 ];
 

@@ -42,7 +42,7 @@ export default function Faq({ dict }: { dict: Dictionary }) {
           </div>
           <div className="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-primary/20 via-primary/70 from-primary bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-primary/10 rounded-full"></div>
 
-          <div className="absolute bottom-28 md:start-0 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3">
+          {/* <div className="absolute bottom-28 md:start-0 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3">
             <div className="flex items-center">
               <div className="flex items-center justify-center size-[65px] bg-primary/5 text-primary text-center rounded-full me-3">
                 <FiDownload className="size-6" />
@@ -54,7 +54,7 @@ export default function Faq({ dict }: { dict: Dictionary }) {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="lg:me-8 order-2 md:order-1">
@@ -69,7 +69,7 @@ export default function Faq({ dict }: { dict: Dictionary }) {
             out some of our FAQs below.
           </p>
 
-          <div id="accordion-collapseone" className="">
+          <div id="accordion-collapseone" className="mt-8">
             {faq.map((item: Question, index: number) => {
               return (
                 <div
